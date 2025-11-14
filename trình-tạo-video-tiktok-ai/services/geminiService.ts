@@ -18,11 +18,11 @@ const isVideoOperationResponse = (op: any): op is VideoOperationResponse => {
 };
 
 export const generateVideo = async (prompt: string): Promise<string> => {
-    if (!process.env.API_KEY) {
-        throw new Error("API_KEY môi trường biến không được thiết lập.");
+    if (!process.env.GEMINI_API_KEY) {
+        throw new Error("GEMINI_API_KEY môi trường biến không được thiết lập.");
     }
 
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
     let operation;
     try {
