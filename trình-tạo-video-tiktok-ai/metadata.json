@@ -1,0 +1,5 @@
+{
+  "name": "Trình tạo video TikTok AI",
+  "description": "Tạo các video ngắn theo phong cách TikTok từ các mô tả văn bản. Chỉ cần mô tả kịch bản, bối cảnh và độ dài, AI sẽ tạo ra một video độc đáo cho bạn.",
+  "requestFramePermissions": []
+}
